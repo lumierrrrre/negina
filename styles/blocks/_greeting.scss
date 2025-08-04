@@ -1,0 +1,86 @@
+.greeting {
+    position: relative;
+    overflow: visible;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+        @include fluid-image(312, 90, 312 / 2167);
+
+        content: "";
+        position: absolute;
+        background-image: url("/images/greeting/right-graffiti.svg");
+        top: -325px;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+
+        @include tablet {
+            top: -275px;
+        }
+
+        @include mobile {
+            top: -250px;
+        }
+    }
+
+    &__title {
+        line-height: 240%;
+        padding-bottom: 27px;
+    }
+
+    &__text {
+        @include fluid-text(22, 18);
+
+        font-weight: 200;
+        text-align: center;
+        padding-inline: 277px;
+        padding-bottom: 40px;
+
+        @include desktop {
+            padding-inline: 220px;
+            padding-bottom: 35px;
+        }
+
+        @include tablet {
+            padding-inline: 120px;
+        }
+
+        @include mobile {
+            padding-inline: 40px;
+            padding-bottom: 50px;
+        }
+
+        @include mobile-s {
+            padding-bottom: 45px;
+        }
+    }
+
+    &__photoset {
+        width: 100%;
+        height: auto;
+        padding-inline: 120px;
+
+        @include desktop {
+            padding-inline: 100px;
+        }
+
+        @include tablet {
+            padding-inline: 60px;
+        }
+
+        @include mobile {
+            width: 70%;
+            padding-inline: 30px;
+        }
+
+        @include mobile-s {
+            width: 80%;
+        }
+    }
+}

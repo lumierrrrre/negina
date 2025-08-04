@@ -1,0 +1,157 @@
+.header {
+    position: relative;
+    overflow: visible;
+    margin-inline: auto;
+    margin-bottom: 271px;
+
+    @include desktop {
+        margin-bottom: 200px;
+    }
+
+    @include tablet {
+        margin-bottom: 40px;
+    }
+
+    &::before {
+        @include fluid-image(614, 205, 614 / 1280);
+
+        content: "";
+        position: absolute;
+        background-image: url("/images/header/left-graffiti.svg");
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+    }
+
+    &::after {
+        @include fluid-image(344, 115, 344 / 674);
+
+        content: "";
+        position: absolute;
+        background-image: url("/images/header/right-graffiti.svg");
+        top: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+    }
+
+    &__inner {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__info {
+        padding: 175px 90px;
+        margin-left: auto;
+        z-index: 3;
+
+        @include tablet {
+            order: 1;
+            padding: 20px 20px;
+            margin-inline: auto;
+        }
+
+        &--name {
+            font-size: 24px;
+            padding-bottom: 22px;
+
+            @include desktop {
+                font-size: 21px;
+            }
+
+            @include tablet {
+                font-size: 24px;
+            }
+
+            @include mobile {
+                font-size: 22px;
+            }
+        }
+
+        &--position {
+            font-size: 20px;
+            font-weight: 200;
+
+            @include desktop {
+                font-size: 17px;
+            }
+
+            @include tablet {
+                font-size: 20px;
+            }
+
+            @include mobile {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__photo {
+        @include fluid-image(561, 350, 561 / 701);
+
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("/images/header/portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 3;
+        align-self: center;
+        padding-bottom: 50px;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+        @include tablet {
+            order: 0;
+            padding-top: 360px;
+            padding-bottom: 120px;
+        }
+
+        &::after {
+            @include fluid-image(635, 200, 635 / 512);
+
+            content: "";
+            position: absolute;
+            background-image: url("/images/header/center-graffiti.svg");
+            top: -50px;
+            left: 70%;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 4;
+
+            @include tablet {
+                top: 360px;
+                @include fluid-image(350, 250, 635 / 512); // TODO: заменить
+            }
+
+            @include mobile {
+                top: 320px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__addition {
+        padding-inline: 50px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        &--telegram {
+            z-index: 4;
+        }
+    }
+}

@@ -2,9 +2,18 @@
     font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
 }
 
+@mixin fluid-image($max-width, $min-width, $aspect-ratio) {
+    width: clamp(
+        #{$min-width}px,
+        #{$max-width / 1440 * 100}vw,
+        #{$max-width}px
+    );
+    aspect-ratio: #{$aspect-ratio};
+}
+
 @mixin reset-link {
     color: inherit;
-    
+
     &,
     &:hover {
         text-decoration: none;

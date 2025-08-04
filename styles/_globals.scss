@@ -3,7 +3,7 @@ body {
 
     font-family: var(--font-family-base);
     font-weight: 400;
-    line-height: 1.28;  // ~ по умолчанию в Google Chrome
+    line-height: 1.28; // ~ по умолчанию в Google Chrome
     color: var(--color-light);
     background-color: var(--color-dark);
 }
@@ -21,18 +21,20 @@ a {
     color: inherit;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-family-headers);
     font-weight: 500;
     color: var(--color-accent);
 }
 
 h1 {
-    @include fluid-text(124, 124);
+    @include fluid-text(124, 34);
 }
 
 h2 {
-    @include fluid-text(50, 50);
+    @include fluid-text(50, 26);
 }
 
 h3 {

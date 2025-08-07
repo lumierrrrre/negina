@@ -1,0 +1,89 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        width: 1743px;
+        height: 611px;
+
+        content: "";
+        position: absolute;
+        background-image: url("/images/footer/footer-graffiti.svg");
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        text-align: center;
+        padding: 219px 20px 60px;
+        margin: 0 auto;
+        line-height: 50px;
+
+        @include desktop {
+            padding-top: 150px;
+        }
+
+        @include tablet {
+            padding-top: 130px;
+        }
+    }
+
+    .contacts__list {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 50px;
+        padding-bottom: 160px;
+
+        @include desktop {
+            padding-bottom: 100px;
+        }
+
+        @include tablet {
+            padding-bottom: 80px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__button {
+        padding: 8px 18px 8px 40px;
+        margin-bottom: 141px;
+        color: var(--color-dark);
+        background-color: var(--color-accent);
+        position: relative;
+        border: none;
+        border-radius: 25px;
+
+        @include desktop {
+            margin-bottom: 100px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("/images/icons/arrow.svg");
+            width: 16px;
+            height: 19px;
+            top: 25%;
+            left: 15px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &:hover {
+            background-color: var(--color-light-gray);
+        }
+    }
+}

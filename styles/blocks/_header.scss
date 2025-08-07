@@ -124,6 +124,10 @@
             padding-bottom: 120px;
         }
 
+        @include mobile {
+            padding-inline: 10px;
+        }
+
         &::after {
             @include fluid-image(635, 200, 635 / 512);
 

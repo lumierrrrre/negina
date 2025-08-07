@@ -84,6 +84,7 @@
                         <a
                             class="contacts__item--link"
                             href="mailto:nehaazer@gmail.com"
+                            target="_blank"
                             >nehaazer@gmail.com</a
                         >
                     </li>
@@ -99,6 +100,7 @@
                         <a
                             class="contacts__item--link"
                             href="https://t.me/nexazer"
+                            target="_blank"
                             >nexazer</a
                         >
                     </li>
@@ -111,7 +113,10 @@
                             height="19"
                             loading="lazy"
                         />
-                        <a class="contacts__item--link" href="tel:+79961010127"
+                        <a
+                            class="contacts__item--link"
+                            href="tel:+79961010127"
+                            target="_blank"
                             >+7 996 101 01 27</a
                         >
                     </li>
@@ -323,5 +328,76 @@
                 </ul>
             </article>
         </section>
+        <footer class="footer">
+            <div class="footer__inner">
+                <h3 class="footer__text">
+                    Не забудьте<br />
+                    связаться со мной
+                </h3>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <img
+                            class="contacts__item--icon"
+                            src="./images/icons/email.svg"
+                            alt="Email Icon"
+                            width="19"
+                            height="19"
+                            loading="lazy"
+                        />
+                        <a
+                            class="contacts__item--link"
+                            href="mailto:nehaazer@gmail.com"
+                            target="_blank"
+                            >nehaazer@gmail.com</a
+                        >
+                    </li>
+                    <li class="contacts__item">
+                        <img
+                            class="contacts__item--icon"
+                            src="./images/icons/telegram.svg"
+                            alt="Telegram Icon"
+                            width="19"
+                            height="19"
+                            loading="lazy"
+                        />
+                        <a
+                            class="contacts__item--link"
+                            href="https://t.me/nexazer"
+                            target="_blank"
+                            >nexazer</a
+                        >
+                    </li>
+                    <li class="contacts__item">
+                        <img
+                            class="contacts__item--icon"
+                            src="./images/icons/phone.svg"
+                            alt="Phone Icon"
+                            width="19"
+                            height="19"
+                            loading="lazy"
+                        />
+                        <a
+                            class="contacts__item--link"
+                            href="tel:+79961010127"
+                            target="_blank"
+                            >+7 996 101 01 27</a
+                        >
+                    </li>
+                </ul>
+                <button class="footer__button" type="button">
+                    посмотреть шедеврорезюме заново
+                </button>
+            </div>
+        </footer>
+        <script>
+            document
+                .querySelector(".footer__button")
+                .addEventListener("click", () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                });
+        </script>
     </body>
 </html>

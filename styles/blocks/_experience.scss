@@ -1,0 +1,86 @@
+.experience {
+    grid-column: 2;
+    grid-row: 1 / 5;
+
+    width: 547px;
+
+    @include tablet {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    @include mobile {
+        width: 380px;
+    }
+
+    &__title {
+        margin-bottom: 44px;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            line-height: 34px;
+        }
+    }
+
+    &__item {
+        &-title {
+            position: relative;
+            padding-left: 93px;
+            padding-bottom: 50px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("../../images/information/star.svg");
+                width: 81px;
+                height: 81px;
+                top: -20px;
+                left: 0;
+            }
+
+            &--period {
+                font-weight: 200;
+                color: var(--color-light-gray);
+            }
+        }
+
+        &-job {
+            margin-bottom: 28px;
+        }
+
+        &__inner-list {
+            &:has(li:nth-child(2)) {
+                list-style: disc;
+                padding-left: 1.5em;
+            }
+            margin-bottom: 41px;
+
+            color: var(--color-light-gray);
+
+            .experience__item-outsource & {
+                margin-bottom: 60px;
+
+                @include mobile {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        &__inner-link {
+            text-decoration: underline;
+        }
+
+        &--divider {
+            width: clamp(380px, 90vw, 547px);
+            height: 1px;
+            background-color: var(--color-dark-gray);
+            display: block;
+            margin-inline: auto;
+
+            margin-bottom: 47px;
+        }
+    }
+}

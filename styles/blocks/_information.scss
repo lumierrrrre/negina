@@ -1,0 +1,35 @@
+.information {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: start;
+    column-gap: 113px;
+
+    padding-inline: 160px;
+
+    @include desktop {
+        column-gap: 60px;
+        padding-inline: 100px;
+    }
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    &__photo {
+        width: 456px;
+        height: auto;
+        grid-column: 1;
+        grid-row: 4;
+
+        @include tablet {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        @include mobile {
+            width: 350px;
+        }
+    }
+}

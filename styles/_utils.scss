@@ -22,3 +22,20 @@
         display: none !important;
     }
 }
+
+.break-md,
+.break-md-wide {
+    display: inline;
+}
+
+@include desktop-w {
+    .break-md-wide {
+        display: none;
+    }
+}
+
+@include desktop {
+    .break-md {
+        display: none;
+    }
+}

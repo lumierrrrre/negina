@@ -1,0 +1,25 @@
+.hard-skills {
+    grid-column: 1; 
+    grid-row: 3;
+
+    margin-bottom: 80px;
+
+    @include tablet {
+        width: 547px;
+        margin-bottom: 70px;
+    }
+
+    @include mobile {
+        width: 380px;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        line-height: 34px;
+        padding-bottom: 46px;
+
+        @include tablet {
+            text-align: center;
+        }
+    }
+}

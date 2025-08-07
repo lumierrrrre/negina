@@ -8,6 +8,16 @@
     justify-content: center;
     align-items: center;
 
+    margin-bottom: 100px;
+
+    @include desktop {
+        margin-bottom: 80px;
+    }
+
+    @include tablet {
+        margin-bottom: 70px;
+    }
+
     &::after {
         @include fluid-image(312, 90, 312 / 2167);
 
@@ -37,22 +47,18 @@
     &__text {
         @include fluid-text(22, 18);
 
+        max-width: 886px;
         font-weight: 200;
         text-align: center;
-        padding-inline: 277px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
+        z-index: 2;
 
         @include desktop {
-            padding-inline: 220px;
+            padding-inline: 50px;
             padding-bottom: 35px;
         }
 
-        @include tablet {
-            padding-inline: 120px;
-        }
-
         @include mobile {
-            padding-inline: 40px;
             padding-bottom: 50px;
         }
 

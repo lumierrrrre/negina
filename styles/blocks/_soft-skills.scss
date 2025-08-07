@@ -1,0 +1,29 @@
+.soft-skills {
+    grid-column: 1; 
+    grid-row: 2;
+
+    margin-bottom: 70px;
+
+    @include tablet {
+        width: 547px;
+        margin-bottom: 50px;
+    }
+
+    @include mobile {
+        width: 380px;
+    }
+
+    &__title {
+        line-height: 34px;
+        padding-bottom: 46px;
+
+        @include tablet {
+            text-align: center;
+        }
+    }
+
+    &__list {
+        list-style: disc;
+        padding-left: 1.5em;
+    }
+}

@@ -133,13 +133,13 @@
         }
 
         &::after {
-            @include fluid-image(635, 200, 635 / 512);
+            @include fluid-image(500, 200, 500 / 500);
 
             content: "";
             position: absolute;
             background-image: url("/images/header/center-graffiti.svg");
             top: -50px;
-            left: 70%;
+            left: 65%;
             transform: translateX(-50%);
             background-repeat: no-repeat;
             background-size: contain;
@@ -147,11 +147,11 @@
 
             @include tablet {
                 top: 360px;
-                @include fluid-image(350, 230, 635 / 512); // TODO: заменить
+                @include fluid-image(400, 230, 350 / 350); // TODO: заменить
             }
 
             @include mobile {
-                top: 340px;
+                top: 320px;
             }
         }
     }

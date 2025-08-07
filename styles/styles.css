@@ -436,13 +436,13 @@ h5 {
   }
 }
 .header__title::after {
-  width: clamp(200px, 44.0972222222vw, 635px);
-  aspect-ratio: 1.240234375;
+  width: clamp(200px, 34.7222222222vw, 500px);
+  aspect-ratio: 1;
   content: "";
   position: absolute;
   background-image: url("/images/header/center-graffiti.svg");
   top: -50px;
-  left: 70%;
+  left: 65%;
   transform: translateX(-50%);
   background-repeat: no-repeat;
   background-size: contain;
@@ -451,13 +451,13 @@ h5 {
 @media (max-width: 1023px) {
   .header__title::after {
     top: 360px;
-    width: clamp(230px, 24.3055555556vw, 350px);
-    aspect-ratio: 1.240234375;
+    width: clamp(230px, 27.7777777778vw, 400px);
+    aspect-ratio: 1;
   }
 }
 @media (max-width: 767px) {
   .header__title::after {
-    top: 340px;
+    top: 320px;
   }
 }
 .header .u {

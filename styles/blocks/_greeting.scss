@@ -58,7 +58,7 @@
             padding-bottom: 35px;
         }
 
-        @include mobile {
+        @include tablet {
             padding-bottom: 50px;
         }
 
@@ -68,25 +68,10 @@
     }
 
     &__photoset {
-        width: 100%;
-        height: auto;
-        padding-inline: 120px;
-
-        @include desktop {
-            padding-inline: 100px;
-        }
+        @include fluid-image(1203, 340, 1203 / 388);
 
         @include tablet {
-            padding-inline: 60px;
-        }
-
-        @include mobile {
-            width: 70%;
-            padding-inline: 30px;
-        }
-
-        @include mobile-s {
-            width: 80%;
+            @include fluid-image(560, 340, 560 / 664);
         }
     }
 }

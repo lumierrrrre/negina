@@ -8,11 +8,6 @@
         grid-column: 1;
         grid-row: 4;
         width: 100%;
-        padding-inline: 60px;
-    }
-
-    @include mobile {
-        padding-inline: 5px;
     }
 
     &__title {

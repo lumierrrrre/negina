@@ -6,12 +6,7 @@
 
     @include tablet {
         width: 100%;
-        padding-inline: 60px;
         margin-bottom: 50px;
-    }
-
-    @include mobile {
-        padding-inline: 5px;
     }
 
     &__title {

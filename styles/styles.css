@@ -215,6 +215,18 @@ svg * {
   overflow: hidden !important;
 }
 
+@media (max-width: 1023px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .visible-tablet {
+    display: none !important;
+  }
+}
+
 @media (max-width: 767px) {
   .hidden-mobile {
     display: none !important;
@@ -554,7 +566,7 @@ h5 {
     padding-bottom: 35px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .greeting__text {
     padding-bottom: 50px;
   }
@@ -565,29 +577,13 @@ h5 {
   }
 }
 .greeting__photoset {
-  width: 100%;
-  height: auto;
-  padding-inline: 120px;
-}
-@media (max-width: 1280px) {
-  .greeting__photoset {
-    padding-inline: 100px;
-  }
+  width: clamp(340px, 83.5416666667vw, 1203px);
+  aspect-ratio: 3.1005154639;
 }
 @media (max-width: 1023px) {
   .greeting__photoset {
-    padding-inline: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .greeting__photoset {
-    width: 70%;
-    padding-inline: 30px;
-  }
-}
-@media (max-width: 640px) {
-  .greeting__photoset {
-    width: 80%;
+    width: clamp(340px, 38.8888888889vw, 560px);
+    aspect-ratio: 0.843373494;
   }
 }
 
@@ -611,6 +607,11 @@ h5 {
   .information {
     grid-template-columns: 1fr;
     justify-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .information {
+    padding-inline: 50px;
   }
 }
 .information__photo {
@@ -639,13 +640,7 @@ h5 {
 @media (max-width: 1023px) {
   .contacts {
     width: 100%;
-    padding-inline: 60px;
     margin-bottom: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .contacts {
-    padding-inline: 5px;
   }
 }
 .contacts__title {
@@ -683,13 +678,7 @@ h5 {
 @media (max-width: 1023px) {
   .soft-skills {
     width: 100%;
-    padding-inline: 60px;
     margin-bottom: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .soft-skills {
-    padding-inline: 5px;
   }
 }
 .soft-skills__title {
@@ -714,13 +703,11 @@ h5 {
 @media (max-width: 1023px) {
   .hard-skills {
     width: 100%;
-    padding-inline: 60px;
     margin-bottom: 70px;
   }
 }
 @media (max-width: 767px) {
   .hard-skills {
-    padding-inline: 5px;
     margin-bottom: 60px;
   }
 }
@@ -744,12 +731,6 @@ h5 {
     grid-column: 1;
     grid-row: 4;
     width: 100%;
-    padding-inline: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .experience {
-    padding-inline: 5px;
   }
 }
 .experience__title {

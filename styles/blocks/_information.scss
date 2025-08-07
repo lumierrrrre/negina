@@ -17,6 +17,10 @@
         justify-items: center;
     }
 
+    @include mobile {
+        padding-inline: 50px;
+    }
+
     &__photo {
         width: 456px;
         height: auto;

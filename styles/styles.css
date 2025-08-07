@@ -242,10 +242,6 @@ svg * {
     display: none;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-size: clamp(16px, 1.25vw, 18px);
   font-family: var(--font-family-base);
@@ -253,6 +249,7 @@ body {
   line-height: 1.28;
   color: var(--color-light);
   background-color: var(--color-dark);
+  overflow-x: hidden;
 }
 
 a,

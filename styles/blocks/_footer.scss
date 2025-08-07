@@ -36,6 +36,10 @@
         @include tablet {
             padding-top: 130px;
         }
+
+        @include mobile {
+            padding-top: 100px;
+        }
     }
 
     .contacts__list {

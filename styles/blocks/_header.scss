@@ -101,7 +101,7 @@
     }
 
     &__photo {
-        @include fluid-image(561, 350, 561 / 701);
+        @include fluid-image(561, 340, 561 / 701);
 
         position: absolute;
         top: 60px;

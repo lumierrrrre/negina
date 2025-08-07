@@ -7,10 +7,12 @@
     @include tablet {
         grid-column: 1;
         grid-row: 4;
+        width: 100%;
+        padding-inline: 60px;
     }
 
     @include mobile {
-        width: 380px;
+        padding-inline: 5px;
     }
 
     &__title {
@@ -74,13 +76,17 @@
         }
 
         &--divider {
-            width: clamp(380px, 90vw, 547px);
+            width: 100%;
+            max-width: 547px;
             height: 1px;
             background-color: var(--color-dark-gray);
             display: block;
             margin-inline: auto;
 
             margin-bottom: 47px;
+            @include mobile {
+                max-width: 340px;
+            }
         }
     }
 }

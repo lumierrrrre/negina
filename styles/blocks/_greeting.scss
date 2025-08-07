@@ -19,7 +19,7 @@
     }
 
     &::after {
-        @include fluid-image(312, 90, 312 / 2167);
+        @include fluid-image(312, 70, 312 / 2167);
 
         content: "";
         position: absolute;

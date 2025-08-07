@@ -403,7 +403,7 @@ h5 {
   }
 }
 .header__photo {
-  width: clamp(350px, 38.9583333333vw, 561px);
+  width: clamp(340px, 38.9583333333vw, 561px);
   aspect-ratio: 0.8002853067;
   position: absolute;
   top: 60px;
@@ -515,7 +515,7 @@ h5 {
   }
 }
 .greeting::after {
-  width: clamp(90px, 21.6666666667vw, 312px);
+  width: clamp(70px, 21.6666666667vw, 312px);
   aspect-ratio: 0.1439778496;
   content: "";
   position: absolute;
@@ -627,7 +627,7 @@ h5 {
 }
 @media (max-width: 767px) {
   .information__photo {
-    width: 350px;
+    width: 340px;
   }
 }
 
@@ -638,13 +638,14 @@ h5 {
 }
 @media (max-width: 1023px) {
   .contacts {
-    width: 547px;
+    width: 100%;
+    padding-inline: 60px;
     margin-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    width: 380px;
+    padding-inline: 5px;
   }
 }
 .contacts__title {
@@ -681,13 +682,14 @@ h5 {
 }
 @media (max-width: 1023px) {
   .soft-skills {
-    width: 547px;
+    width: 100%;
+    padding-inline: 60px;
     margin-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
   .soft-skills {
-    width: 380px;
+    padding-inline: 5px;
   }
 }
 .soft-skills__title {
@@ -711,13 +713,14 @@ h5 {
 }
 @media (max-width: 1023px) {
   .hard-skills {
-    width: 547px;
+    width: 100%;
+    padding-inline: 60px;
     margin-bottom: 70px;
   }
 }
 @media (max-width: 767px) {
   .hard-skills {
-    width: 380px;
+    padding-inline: 5px;
     margin-bottom: 60px;
   }
 }
@@ -740,11 +743,13 @@ h5 {
   .experience {
     grid-column: 1;
     grid-row: 4;
+    width: 100%;
+    padding-inline: 60px;
   }
 }
 @media (max-width: 767px) {
   .experience {
-    width: 380px;
+    padding-inline: 5px;
   }
 }
 .experience__title {
@@ -801,12 +806,18 @@ h5 {
   text-decoration: underline;
 }
 .experience__item--divider {
-  width: clamp(380px, 90vw, 547px);
+  width: 100%;
+  max-width: 547px;
   height: 1px;
   background-color: var(--color-dark-gray);
   display: block;
   margin-inline: auto;
   margin-bottom: 47px;
+}
+@media (max-width: 767px) {
+  .experience__item--divider {
+    max-width: 340px;
+  }
 }
 
 .footer {
@@ -845,6 +856,11 @@ h5 {
 @media (max-width: 1023px) {
   .footer__text {
     padding-top: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__text {
+    padding-top: 100px;
   }
 }
 .footer .contacts__list {

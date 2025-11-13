@@ -1,4 +1,4 @@
-<h1>Negina's resume site</h1>
+<h1><a href="https://nexazer.github.io" target="_blank">Negina's resume site</a></h1>
 <p>Resume site for an excellent advertising manager (and also my beautiful girlfriend)<p>
 <p><b>Tech Stack:</b><p>
 <p>

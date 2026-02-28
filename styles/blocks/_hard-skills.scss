@@ -1,24 +1,24 @@
 .hard-skills {
-    grid-column: 1; 
-    grid-row: 3;
+  grid-column: 1;
+  grid-row: 3;
 
-    margin-bottom: 80px;
+  margin-bottom: 80px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    line-height: 34px;
+    padding-bottom: 46px;
 
     @include tablet {
-        width: 100%;
-        margin-bottom: 70px;
+      text-align: center;
     }
-
-    @include mobile {
-        margin-bottom: 60px;
-    }
-
-    &__title {
-        line-height: 34px;
-        padding-bottom: 46px;
-
-        @include tablet {
-            text-align: center;
-        }
-    }
+  }
 }

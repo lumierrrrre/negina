@@ -1,77 +1,77 @@
 .greeting {
-    position: relative;
-    overflow: visible;
-    margin: 0 auto;
+  position: relative;
+  overflow: visible;
+  margin: 0 auto;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    margin-bottom: 100px;
+  margin-bottom: 100px;
+
+  @include desktop {
+    margin-bottom: 80px;
+  }
+
+  @include tablet {
+    margin-bottom: 70px;
+  }
+
+  &::after {
+    @include fluid-image(312, 70, 312 / 2167);
+
+    content: '';
+    position: absolute;
+    background-image: url('/images/greeting/right-graffiti.svg');
+    top: -325px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+
+    @include tablet {
+      top: -275px;
+    }
+
+    @include mobile {
+      top: -250px;
+    }
+  }
+
+  &__title {
+    line-height: 240%;
+    padding-bottom: 27px;
+  }
+
+  &__text {
+    @include fluid-text(22, 18);
+
+    max-width: 886px;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 50px;
+    z-index: 2;
 
     @include desktop {
-        margin-bottom: 80px;
+      padding-inline: 50px;
+      padding-bottom: 35px;
     }
 
     @include tablet {
-        margin-bottom: 70px;
+      padding-bottom: 50px;
     }
 
-    &::after {
-        @include fluid-image(312, 70, 312 / 2167);
-
-        content: "";
-        position: absolute;
-        background-image: url("/images/greeting/right-graffiti.svg");
-        top: -325px;
-        right: 0;
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 2;
-
-        @include tablet {
-            top: -275px;
-        }
-
-        @include mobile {
-            top: -250px;
-        }
+    @include mobile-s {
+      padding-bottom: 45px;
     }
+  }
 
-    &__title {
-        line-height: 240%;
-        padding-bottom: 27px;
+  &__photoset {
+    @include fluid-image(1203, 340, 1203 / 388);
+
+    @include tablet {
+      @include fluid-image(560, 340, 560 / 664);
     }
-
-    &__text {
-        @include fluid-text(22, 18);
-
-        max-width: 886px;
-        font-weight: 200;
-        text-align: center;
-        padding-bottom: 50px;
-        z-index: 2;
-
-        @include desktop {
-            padding-inline: 50px;
-            padding-bottom: 35px;
-        }
-
-        @include tablet {
-            padding-bottom: 50px;
-        }
-
-        @include mobile-s {
-            padding-bottom: 45px;
-        }
-    }
-
-    &__photoset {
-        @include fluid-image(1203, 340, 1203 / 388);
-
-        @include tablet {
-            @include fluid-image(560, 340, 560 / 664);
-        }
-    }
+  }
 }

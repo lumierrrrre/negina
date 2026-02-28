@@ -89,25 +89,25 @@ button {
 
 html {
   /**
-   Пригодится в большинстве ситуаций
-   (когда, например, нужно будет "прижать" футер к низу сайта)
-  */
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
   height: 100%;
   /**
-   Плавный скролл
-  */
+    Плавный скролл
+   */
   scroll-behavior: smooth;
 }
 
 body {
   /**
-   Пригодится в большинстве ситуаций
-   (когда, например, нужно будет "прижать" футер к низу сайта)
-  */
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
   min-height: 100%;
   /**
-   Унифицированный интерлиньяж
-  */
+    Унифицированный интерлиньяж
+   */
   line-height: 1.5;
 }
 
@@ -197,8 +197,8 @@ svg * {
   --color-accent: #b2fa36;
   --color-dark-gray: #717171;
   --color-light-gray: #dadada;
-  --font-family-base: "Onest", sans-serif;
-  --font-family-headers: "Onder", sans-serif;
+  --font-family-base: 'Onest', sans-serif;
+  --font-family-headers: 'Onder', sans-serif;
   --transition-duration: 0.2s;
 }
 
@@ -767,13 +767,13 @@ h5 {
 .experience__item-job {
   margin-bottom: 28px;
 }
-.experience__item__inner-list {
-  margin-bottom: 41px;
-  color: var(--color-light-gray);
-}
 .experience__item__inner-list:has(li:nth-child(2)) {
   list-style: disc;
   padding-left: 1.5em;
+}
+.experience__item__inner-list {
+  margin-bottom: 41px;
+  color: var(--color-light-gray);
 }
 .experience__item-outsource .experience__item__inner-list {
   margin-bottom: 60px;

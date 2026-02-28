@@ -14,7 +14,7 @@
     margin-bottom: 80px;
   }
 
-  @include tablet {
+  @include mobile {
     margin-bottom: 70px;
   }
 
@@ -58,7 +58,7 @@
       padding-bottom: 35px;
     }
 
-    @include tablet {
+    @include mobile {
       padding-bottom: 50px;
     }
 
@@ -70,7 +70,7 @@
   &__photoset {
     @include fluid-image(1203, 340, 1203 / 388);
 
-    @include tablet {
+    @include mobile {
       @include fluid-image(560, 340, 560 / 664);
     }
   }

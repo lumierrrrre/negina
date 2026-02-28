@@ -13,6 +13,10 @@
   </head>
 
   <body>
+    <div id="loader">
+      <div class="loader__spinner"></div>
+    </div>
+
     <header class="header">
       <div class="header__inner">
         <div class="header__info">
@@ -55,20 +59,18 @@
       </div>
 
       <img
-        class="greeting__photoset hidden-tablet"
+        class="greeting__photoset hidden-mobile"
         src="./images/greeting/photoset-wide.svg"
         alt="Photoshoot of working days"
         width="1202"
-        height="387"
         loading="lazy"
       />
 
       <img
-        class="greeting__photoset visible-tablet"
+        class="greeting__photoset visible-mobile"
         src="./images/greeting/photoset-short.svg"
         alt="Photoshoot of working days"
         width="553"
-        height="388"
         loading="lazy"
       />
     </section>
@@ -413,6 +415,10 @@
             behavior: 'smooth',
           });
         });
+
+      window.addEventListener('load', () => {
+        document.getElementById('loader').remove();
+      });
     </script>
   </body>
 </html>

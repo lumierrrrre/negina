@@ -1,3 +1,5 @@
+@use '../media';
+
 .information {
   display: grid;
   grid-template-columns: auto auto;
@@ -7,17 +9,17 @@
 
   padding-inline: 160px;
 
-  @include desktop {
+  @include media.desktop {
     column-gap: 60px;
     padding-inline: 100px;
   }
 
-  @include tablet {
+  @include media.tablet {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 
-  @include mobile {
+  @include media.mobile {
     padding-inline: 50px;
   }
 
@@ -27,12 +29,12 @@
     grid-column: 1;
     grid-row: 4;
 
-    @include tablet {
+    @include media.tablet {
       grid-column: 1;
       grid-row: 5;
     }
 
-    @include mobile {
+    @include media.mobile {
       width: 340px;
     }
   }

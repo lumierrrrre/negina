@@ -1,3 +1,8 @@
+@use 'sass:math';
+
+@use '../media';
+@use '../mixins';
+
 .greeting {
   position: relative;
   overflow: visible;
@@ -10,16 +15,16 @@
 
   margin-bottom: 100px;
 
-  @include desktop {
+  @include media.desktop {
     margin-bottom: 80px;
   }
 
-  @include mobile {
+  @include media.mobile {
     margin-bottom: 70px;
   }
 
   &::after {
-    @include fluid-image(312, 70, 312 / 2167);
+    @include mixins.fluid-image(312, 70, math.div(312, 2176));
 
     content: '';
     position: absolute;
@@ -30,11 +35,11 @@
     background-size: contain;
     z-index: 2;
 
-    @include tablet {
+    @include media.tablet {
       top: -275px;
     }
 
-    @include mobile {
+    @include media.mobile {
       top: -250px;
     }
   }
@@ -45,7 +50,7 @@
   }
 
   &__text {
-    @include fluid-text(22, 18);
+    @include mixins.fluid-text(22, 18);
 
     max-width: 886px;
     font-weight: 200;
@@ -53,25 +58,25 @@
     padding-bottom: 50px;
     z-index: 2;
 
-    @include desktop {
+    @include media.desktop {
       padding-inline: 50px;
       padding-bottom: 35px;
     }
 
-    @include mobile {
+    @include media.mobile {
       padding-bottom: 50px;
     }
 
-    @include mobile-s {
+    @include media.mobile-s {
       padding-bottom: 45px;
     }
   }
 
   &__photoset {
-    @include fluid-image(1203, 340, 1203 / 388);
+    @include mixins.fluid-image(1203, 340, math.div(1203, 388));
 
-    @include mobile {
-      @include fluid-image(560, 340, 560 / 664);
+    @include media.mobile {
+      @include mixins.fluid-image(560, 340, math.div(560, 664));
     }
   }
 }

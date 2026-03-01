@@ -1,3 +1,5 @@
+@use 'media';
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -12,25 +14,25 @@
 }
 
 .hidden-tablet {
-  @include tablet {
+  @include media.tablet {
     display: none !important;
   }
 }
 
 .visible-tablet {
-  @include tablet-above {
+  @include media.tablet-above {
     display: none !important;
   }
 }
 
 .hidden-mobile {
-  @include mobile {
+  @include media.mobile {
     display: none !important;
   }
 }
 
 .visible-mobile {
-  @include mobile-above {
+  @include media.mobile-above {
     display: none !important;
   }
 }
@@ -40,13 +42,13 @@
   display: inline;
 }
 
-@include desktop-w {
+@include media.desktop-w {
   .break-md-wide {
     display: none;
   }
 }
 
-@include desktop {
+@include media.desktop {
   .break-md {
     display: none;
   }

@@ -556,7 +556,7 @@ h5 {
 }
 .greeting::after {
   width: clamp(70px, 21.6666666667vw, 312px);
-  aspect-ratio: 0.1439778496;
+  aspect-ratio: 0.1433823529;
   content: "";
   position: absolute;
   background-image: url("/images/greeting/right-graffiti.svg");
@@ -620,14 +620,12 @@ h5 {
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: start;
-  -moz-column-gap: 113px;
-       column-gap: 113px;
+  column-gap: 113px;
   padding-inline: 160px;
 }
 @media (max-width: 1280px) {
   .information {
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
     padding-inline: 100px;
   }
 }
@@ -694,8 +692,7 @@ h5 {
 .contacts__item {
   display: flex;
   align-items: center;
-  -moz-column-gap: 18px;
-       column-gap: 18px;
+  column-gap: 18px;
 }
 
 .soft-skills {
@@ -875,8 +872,7 @@ h5 {
 .footer .contacts__list {
   flex-direction: row;
   justify-content: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
   padding-bottom: 160px;
 }
 @media (max-width: 1280px) {
@@ -921,4 +917,6 @@ h5 {
 }
 .footer__button:hover {
   background-color: var(--color-light-gray);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

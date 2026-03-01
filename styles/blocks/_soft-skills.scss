@@ -1,10 +1,12 @@
+@use '../media';
+
 .soft-skills {
   grid-column: 1;
   grid-row: 2;
 
   margin-bottom: 70px;
 
-  @include tablet {
+  @include media.tablet {
     width: 100%;
     margin-bottom: 50px;
   }
@@ -13,7 +15,7 @@
     line-height: 34px;
     padding-bottom: 46px;
 
-    @include tablet {
+    @include media.tablet {
       text-align: center;
     }
   }

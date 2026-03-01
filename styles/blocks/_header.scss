@@ -1,19 +1,24 @@
+@use 'sass:math';
+
+@use '../media';
+@use '../mixins';
+
 .header {
   position: relative;
   overflow: visible;
   margin-inline: auto;
   margin-bottom: 271px;
 
-  @include desktop {
+  @include media.desktop {
     margin-bottom: 200px;
   }
 
-  @include tablet {
+  @include media.tablet {
     margin-bottom: 40px;
   }
 
   &::before {
-    @include fluid-image(614, 205, 614 / 1280);
+    @include mixins.fluid-image(614, 205, math.div(614, 1280));
 
     content: '';
     position: absolute;
@@ -26,7 +31,7 @@
   }
 
   &::after {
-    @include fluid-image(344, 115, 344 / 674);
+    @include mixins.fluid-image(344, 115, math.div(344, 674));
 
     content: '';
     position: absolute;
@@ -51,17 +56,17 @@
     margin-left: auto;
     z-index: 3;
 
-    @include desktop {
+    @include media.desktop {
       padding-inline: 80px;
     }
 
-    @include tablet {
+    @include media.tablet {
       order: 1;
       padding: 20px 20px;
       margin-inline: auto;
     }
 
-    @include mobile {
+    @include media.mobile {
       padding-top: 30px;
     }
 
@@ -69,15 +74,15 @@
       font-size: 24px;
       padding-bottom: 22px;
 
-      @include desktop {
+      @include media.desktop {
         font-size: 21px;
       }
 
-      @include tablet {
+      @include media.tablet {
         font-size: 24px;
       }
 
-      @include mobile {
+      @include media.mobile {
         font-size: 22px;
       }
     }
@@ -86,22 +91,22 @@
       font-size: 20px;
       font-weight: 200;
 
-      @include desktop {
+      @include media.desktop {
         font-size: 17px;
       }
 
-      @include tablet {
+      @include media.tablet {
         font-size: 20px;
       }
 
-      @include mobile {
+      @include media.mobile {
         font-size: 18px;
       }
     }
   }
 
   &__photo {
-    @include fluid-image(561, 340, 561 / 701);
+    @include mixins.fluid-image(561, 340, math.div(561, 701));
 
     position: absolute;
     top: 60px;
@@ -122,18 +127,18 @@
     padding-inline: 35px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
-    @include tablet {
+    @include media.tablet {
       order: 0;
       padding-top: 360px;
       padding-bottom: 120px;
     }
 
-    @include mobile {
+    @include media.mobile {
       padding-inline: 10px;
     }
 
     &::after {
-      @include fluid-image(500, 200, 500 / 500);
+      @include mixins.fluid-image(500, 200, math.div(500, 500));
 
       content: '';
       position: absolute;
@@ -145,12 +150,12 @@
       background-size: contain;
       z-index: 4;
 
-      @include tablet {
+      @include media.tablet {
         top: 360px;
-        @include fluid-image(400, 230, 350 / 350); // TODO: заменить
+        @include mixins.fluid-image(400, 230, math.div(350, 350));
       }
 
-      @include mobile {
+      @include media.mobile {
         top: 320px;
       }
     }
@@ -159,7 +164,7 @@
   .u {
     filter: blur(1px);
 
-    @include mobile {
+    @include media.mobile {
       filter: blur(0px);
     }
   }
@@ -167,7 +172,7 @@
   .m {
     filter: blur(3px);
 
-    @include mobile {
+    @include media.mobile {
       filter: blur(1px);
     }
   }
@@ -175,7 +180,7 @@
   .e {
     filter: blur(5px);
 
-    @include mobile {
+    @include media.mobile {
       filter: blur(2px);
     }
   }

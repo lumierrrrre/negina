@@ -1,5 +1,17 @@
-@import 'normalize', 'fonts', 'mixins', 'media', 'variables', 'utils', 'globals';
+@use 'normalize';
+@use 'fonts';
+@use 'mixins';
+@use 'media';
+@use 'variables';
+@use 'utils';
+@use 'globals';
 
-@import './blocks/loader', './blocks/header', './blocks/greeting',
-  './blocks/information', './blocks/contacts', './blocks/soft-skills',
-  './blocks/hard-skills', './blocks/experience', './blocks/footer';
+@use './blocks/loader';
+@use './blocks/header';
+@use './blocks/greeting';
+@use './blocks/information';
+@use './blocks/contacts';
+@use './blocks/soft-skills';
+@use './blocks/hard-skills';
+@use './blocks/experience';
+@use './blocks/footer';

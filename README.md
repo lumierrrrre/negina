@@ -1,5 +1,5 @@
 <h1><a href="https://nexazer.github.io" target="_blank">Negina's resume site</a></h1>
-<p>Resume site for an excellent advertising manager (and also my beautiful girlfriend)<p>
+<p>Resume site for an excellent advertising manager (and also my beautiful wife)<p>
 <p><b>Tech Stack:</b><p>
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
